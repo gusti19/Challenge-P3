@@ -1,0 +1,74 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  header, footer {
+    background-color: #949494;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+  }
+
+  .header-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .header2-image {
+      width: 30%;
+      height: auto;
+  }
+
+  .navbar li a:hover {
+    background-color: #414141;
+    color: black;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+  }
+
+  .bio, .biodata {
+    background-color: aqua;
+    flex: 1;
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+  }
+
+  .bio, .experience {
+    background-color: #ffffff;
+    flex: 1;
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+  }
+
+  .bio h2 {
+    margin-top: -1em1;
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      flex
