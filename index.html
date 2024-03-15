@@ -1,56 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge - 22.11.5020</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="https://warungapp.com/wp-content/uploads/2016/06/banner-web-development-e1465379228764.png" alt="Header" class="header-image">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge - 22.11.5020</title>
+
+        <style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+display: flex;
+margin-bottom: 10px;
+} 
+header img {
+    width: 100vw;
+    height: 60vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: auto;
+    padding: 10px;
+    background-color: gray;
+}
+nav ul li{
+    list-style-type: none;
+}
+main{
+    display: flex;
+}
+aside {
+    width: 50vw;
+    background-color: aquamarine;
+    padding-bottom: 20px;
+}
+aside img {
+    margin-left: 20px;
+    max-width: 30%;
+}
+aside h1,p{
+    margin-left: 20px;
+}
+section {
+    margin-left: 30px;
+}
+section h3{
+    margin-bottom: 10px;
+}
+table{
+        border-collapse: collapse;
+        background-color: aquamarine;
+        
+}
+table td{
+    padding: 5px;
+}
+footer{
+    text-align: center;
+
+    padding: 10px;
+   
+    background-color: gray;
+}
+
+    </style>
+    </head>
+    <body>
+        <h1>Challenge_22.11.5020</h1>
+        <header>
+            <img
+                src="https://primeit.lk/res/img/slider/img_1.jpg"
+                alt>
+        </header>
         <nav>
-            <ul class="navbar">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PRODUCTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PRODUCT</li>
+                <li>CONTACT</li>
             </ul>
         </nav>
-    </header>
-    <main class="main-content">
-        <section class="biodata">
-            <h2>Biodata</h2>
-            <img src="https://s0.smartresize.com/wallpaper/870/119/HD-wallpaper-snowman-christmas-happy-holiday-red-snow-snowing-winter-xmas.jpg" alt="Header2 Image" class="header2-image">
-            <p>Hello, My name is Snowman</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <main>
 
-        </section>
-        <section class="experience">
-          <h2>Pengalaman Kerja</h2>
-          <table>
-              <tr>
-                  <th>Tahun</th>
-                  <th>Pekerjaan</th>
-                  <th>Posisi/Jabatan</th>
-              </tr>
-              <tr>
-                  <td>2014</td>
-                  <td>Astra Intl</td>
-                  <td>Digital Marketer</td>
-              </tr>
-              <tr>
-                  <td>2016</td>
-                  <td>Google Asia-Pacific HQ</td>
-                  <td>PR</td>
-              </tr>
-              <!-- Tambahkan baris lain sesuai kebutuhan -->
-          </table>
-      </section>
-      
-    </main>
-    <footer>
-        <p>Copyright Challenge Pemrograman Web</p>
-    </footer>
-</body>
+            <aside>
+                <h1>Biodata</h1>
+                <img
+                    src="https://asset-a.grid.id/crop/0x0:0x0/750x500/photo/intisarifoto/original/51927_olaf.jpg"
+                    alt>
+
+                <p>Halo nama Saya Gusti Padaka
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Earum dolorem at inventore saepe, unde qui?
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora aspernatur tenetur. Sint, esse eligendi!
+                </p>
+
+            </aside>
+            <section>
+
+                <h3>Pengalaman Kerja</h3>
+                <table border="1">
+                    <tr>
+                        <thead>
+                            <th>Tahun</th>
+                            <th>Pekerjaan</th>
+                            <th>Posisi/Jabatan</th>
+                        </thead>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Astra Internasional</td>
+                        <td>Digital Marketer</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Google Asia-Pasific HQ</td>
+                        <td>Public Relations</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright Challange Pemrograman Web</p>
+        </footer>
+    </body>
 </html>
